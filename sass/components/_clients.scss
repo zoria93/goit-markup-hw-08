@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-team-color);
+  fill: currentColor;
+  border: 1px solid var(--icon-team-color);
+  border-radius: 4px;
+  transition: border-color 250ms var(--cubic), color 250ms var(--cubic);
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
