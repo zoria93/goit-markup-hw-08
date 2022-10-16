@@ -1,10 +1,52 @@
-.address {
-  margin-top: 20px;
+// .address {
+//   margin-top: 20px;
 
+//   &__item:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .address__link {
+//   display: block;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.7;
+//   letter-spacing: 0.03em;
+//   color: var(--contact-color);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .address__text {
+//   color: var(--first-bg-color);
+//   transition: color 250ms var(--cubic);
+
+//   &:hover {
+//     color: var(--accent-color);
+//   }
+// }
+
+
+
+
+
+
+.address {
+ 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
+
+.address__list {
+    margin-bottom: 60px;
+}
+
+
 
 .address__link {
   display: block;

@@ -45,8 +45,9 @@
 .checkbox__text {
   display: block;
   padding-left: 36px;
-  font-size: 14px;
-  line-height: 1.7;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -54,8 +55,8 @@
 .checkbox__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   text-decoration-line: underline;

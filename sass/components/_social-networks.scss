@@ -1,3 +1,41 @@
+// .social-networks {
+//   display: flex;
+//   margin-top: 16px;
+//   justify-content: center;
+
+//   &__item:not(:last-child) {
+//     margin-right: 10px;
+//   }
+// }
+
+// .social-network__link {
+//   display: flex;
+//   width: 44px;
+//   height: 44px;
+//   justify-content: center;
+//   align-items: center;
+//   color: var(--icon-team-color);
+//   background-color: var(--first-bg-color);
+//   border-radius: 50%;
+//   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+
+//   &:focus,
+//   &:hover {
+//     color: var(--first-bg-color);
+//     background-color: var(--accent-color);
+//     border-radius: 50%;
+//   }
+// }
+
+// .social-network__icon {
+//   fill: currentColor;
+// }
+
+
+
+
+
+
 .social-networks {
   display: flex;
   margin-top: 16px;
@@ -8,7 +46,7 @@
   }
 }
 
-.social-network__link {
+.social-networks__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -27,6 +65,6 @@
   }
 }
 
-.social-network__icon {
+.social-networks__icon {
   fill: currentColor;
 }

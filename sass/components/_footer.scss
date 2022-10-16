@@ -1,10 +1,22 @@
+// .footer {
+//   background-color: var(--secondary-bg-color);
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+
+//   &__container {
+//     display: flex;
+//     align-items: baseline;
+//   }
+// }
+
+
+
+
+
 .footer {
-  background-color: var(--secondary-bg-color);
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--secondary-bg-color);
 
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
 }

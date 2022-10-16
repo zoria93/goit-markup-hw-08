@@ -1,8 +1,14 @@
+// .header {
+//   border-bottom: 1px solid var(--border-color);
+
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
 .header {
   border-bottom: 1px solid var(--border-color);
+  min-height: 60px;
 
-  &__container {
-    display: flex;
-    align-items: center;
-  }
 }
