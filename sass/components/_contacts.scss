@@ -32,3 +32,12 @@
 //   margin-right: 10px;
 // }
 
+
+
+
+@media screen and (max-width: 767px) {
+    .contacts-list {
+        display: none;
+    }
+
+}

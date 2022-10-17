@@ -52,6 +52,14 @@
   
 }
 
+@media screen and (min-width: 768px) {
+  .nav__logo {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  
+}
+}
+
 .logo__text {
     color: var(--accent-color);
   }

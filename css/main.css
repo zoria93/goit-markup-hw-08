@@ -85,9 +85,9 @@ a {
     width: 480px;
   }
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 780px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -102,6 +102,20 @@ a {
   min-height: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid var(--border-color);
+    min-height: 80px;
+  }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .nav__button {
   width: 40px;
   height: 40px;
@@ -148,19 +162,23 @@ a {
   z-index: 1;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .mobile-menu.is-open {
   display: block;
 }
 
-.mobile-menu.is-open .nav__list {
+.mobile-menu.is-open .mobile-menu__list {
   display: block;
 }
 
-.mobile-menu.is-open .contacts-list {
+.mobile-menu.is-open .contacts-menu {
   display: block;
 }
 
-.nav__list {
+.mobile-menu__list {
   display: none;
 }
 
@@ -176,11 +194,11 @@ a {
           align-items: center;
 }
 
-.nav__item:not(:last-child) {
+.mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.nav__link {
+.mobile-menu__link {
   position: relative;
   font-family: "Roboto";
   font-style: normal;
@@ -190,15 +208,15 @@ a {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.nav__link:hover, .nav__link:focus {
+.mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-color);
 }
 
-.nav__link--current {
+.mobile-menu__link--current {
   color: var(--accent-color);
 }
 
-.contacts-list {
+.contacts-menu {
   display: none;
   margin-top: 302px;
 }
@@ -264,6 +282,14 @@ a {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 767px) {
+  .nav__button {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
 .logo {
   display: inline-block;
   font-family: "Raleway";
@@ -285,6 +311,12 @@ a {
   padding-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
 .logo__text {
   color: var(--accent-color);
 }
@@ -295,6 +327,16 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__link {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
+}
 .hero {
   max-width: 1600px;
   height: 400px;
