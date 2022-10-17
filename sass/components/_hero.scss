@@ -77,11 +77,13 @@
     url(../img/bgimg.jpg);
   background-color: var(--hero-bgr-color);
 
-  &__title {
+}
+
+ .hero__title {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
-    width: 360px;
+
 
     font-size: 26px;
     line-height: 1.6;
@@ -90,9 +92,6 @@
     text-transform: uppercase;
     color: var(--first-bg-color);
   }
-}
-
-
 
 .hero__button {
   display: block;

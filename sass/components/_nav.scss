@@ -45,35 +45,10 @@
 //   }
 // }
 
-.nav__list {
-     display: none;
-}
 
-.contacts-list {
-    display: none;
-}
 
-.nav__button {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    cursor: pointer;
-}
 
-.nav__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.js-menu-container .js-close-menu {
-    display: none;
-}
 
-.js-menu-container.is-open .js-close-menu {
-    display: block;
-}
 
-.js-menu-container.is-open .js-open-menu {
-    display: none;
-}
+

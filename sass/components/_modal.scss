@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--cubic);
+  z-index: 2;
 }
 
 .backdrop.is-hidden .modal {
@@ -44,8 +45,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--first-bg-color);
@@ -53,4 +54,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--cubic);
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+ 
 }
