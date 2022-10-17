@@ -100,24 +100,14 @@
 //   color: var(--primary-text-color);
 // }
 
-
-
-
-
-
-
-
-
-
-
-
 .portfolio-btn {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
@@ -209,6 +199,7 @@
 }
 
 .portfolio__name {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -216,5 +207,5 @@
 }
 
 .portfolio__item:not(:last-child) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }

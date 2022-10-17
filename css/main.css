@@ -695,10 +695,11 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .portfolio-btn__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio-btn__button {
@@ -793,6 +794,7 @@ a {
 }
 
 .portfolio__name {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
