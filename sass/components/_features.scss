@@ -1,6 +1,6 @@
 // .features {
 //   display: flex;
-
+  
 //   &__wrapper {
 //     display: flex;
 //     height: 120px;
@@ -39,9 +39,7 @@
 
 
 
-
 .features {
-
   &__wrapper {
     display: flex;
     height: 120px;
@@ -63,15 +61,14 @@
   }
 }
 
-
-
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-
 .features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+

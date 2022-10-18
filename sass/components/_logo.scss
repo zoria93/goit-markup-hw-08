@@ -23,12 +23,7 @@
 // }
 
 
-
-
-
-
-
-.logo {
+ .logo {
   display: inline-block;
   font-family: "Raleway";
   text-decoration: none;
@@ -49,15 +44,6 @@
 .nav__logo {
   padding-top: 15px;
   padding-bottom: 15px;
-  
-}
-
-@media screen and (min-width: 768px) {
-  .nav__logo {
-  padding-top: 26px;
-  padding-bottom: 26px;
-  
-}
 }
 
 .logo__text {
@@ -69,3 +55,16 @@
   color: var(--first-bg-color);
   margin-bottom: 20px;
 }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .nav__logo {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  
+}
+}
+

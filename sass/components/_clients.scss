@@ -31,11 +31,14 @@
     gap: 30px;
     display: flex;
     justify-content: center;
+
+    &__item {
+      flex-basis: calc((100% - 30px) /2);
+    }
 }
 
 .clients__link {
   display: flex;
-  width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
