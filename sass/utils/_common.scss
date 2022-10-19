@@ -1,7 +1,7 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: var(--primary-text-color);
-    background-color: var(--first-bg-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--first-bg-color);
 }
 
 h1,
@@ -12,57 +12,74 @@ h5,
 h6,
 p,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 img {
-    display: block;
-    width: 100%;
-    height: auto;
-
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    transition: color 250ms var(--cubic);
+  text-decoration: none;
+  transition: color 250ms var(--cubic);
 }
 
 .button {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-// .section__title {
-//     margin-bottom: 50px;
-//     font-size: 36px;
-//     line-height: 1.2;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--title-text-color);
-// }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+}
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

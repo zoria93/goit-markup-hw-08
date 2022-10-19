@@ -32,9 +32,6 @@
     display: flex;
     justify-content: center;
 
-    &__item {
-      flex-basis: calc((100% - 30px) /2);
-    }
 }
 
 .clients__link {
@@ -53,4 +50,25 @@
     border-color: var(--accent-color);
     color: var(--accent-color);
   }
+}
+@media screen and (max-width: 768px) {
+  .clients__item {
+      flex-basis: calc((100% - 30px) /2);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+      flex-basis: calc((100% - 60px) /3);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+  }
+
+
 }

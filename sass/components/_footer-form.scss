@@ -71,13 +71,6 @@
 //   transform: translate(-28px, 13px);
 // }
 
-
-
-
-
-
-
-
 .footer-form {
   margin-left: auto;
 
@@ -149,4 +142,28 @@
   top: 0;
   right: 0;
   transform: translate(-28px, 13px);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-form__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-form__input {
+    display: block;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+     display: inline-block;
+    width: 358px;
+    margin-bottom: 0;
+  }
 }

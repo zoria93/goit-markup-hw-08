@@ -2,7 +2,7 @@
 //   margin-top: 20px;
 
 //   &__item:not(:last-child) {
-//     margin-bottom: 9px;
+//     margin-bottom: 8px;
 //   }
 // }
 
@@ -42,12 +42,6 @@
   }
 }
 
-.address__list {
-    margin-bottom: 60px;
-}
-
-
-
 .address__link {
   display: block;
   font-style: normal;
@@ -71,3 +65,21 @@
     color: var(--accent-color);
   }
 }
+
+
+
+@media screen and (max-width: 1200px) {
+  .address__list {
+    margin-bottom: 60px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list {
+    margin-bottom: 0;
+}
+
+}
+
+
