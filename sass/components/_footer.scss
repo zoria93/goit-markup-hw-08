@@ -29,6 +29,7 @@
 }
 }
 
+
 @media screen and (max-width: 1200px) {
   .footer {
     text-align: center;
@@ -43,7 +44,7 @@
 
       &__container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
   }
