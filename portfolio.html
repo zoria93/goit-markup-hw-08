@@ -1,70 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Portfolio</title>
   </head>
   <body>
-     <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <div class="nav__menu">
-          <a href="./index.html" class="logo nav__logo"
-            ><span class="logo__text">Web</span>Studio</a>
-
-            <!-- mobile menu -->
-        <button type="button" class="button nav__button" data-menu-button>
-           <svg width="40" height="40">
-                <use class="nav__close" href="./img/icons.svg#icon-close"></use>
+            <a href="./index.html" class="logo nav__logo"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+            <button type="button" class="button nav__button--open js-open-menu">
+              <svg width="40" height="40">
                 <use class="nav__open" href="./img/icons.svg#icon-menu"></use>
-           </svg>
-        </button>
-       </div>
-  <div class="mobile-menu" data-menu>
-    <ul class="mobile-menu__list">
-           <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link">Студія</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфоліо</a>
-            </li>
-            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
-          </ul>
+              </svg>
+            </button>
+          </div>
 
-          <ul class="contacts-menu">
-            <li class="contacts-menu__item">
-            <a href="tel:+380961111111" class="tell-list__link">+38 096 111 11 11</a>
-          </li>
-          <li class="contacts-menu__item">
-            <a href="mailto:info@devstudio.com" class="mail-list__link">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="nav-social">
-        <li class="nav-social__item"><a href="" class="nav-social__link">Instagram</a></li>
-        <li class="nav-social__item"><a href="" class="nav-social__link">Twitter</a></li>
-        <li class="nav-social__item"><a href="" class="nav-social__link">Facebook</a></li>
-        <li class="nav-social__item"><a href="" class="nav-social__link">LinkedIn</a></li>
-        </ul>
-  </div>
-  <!-- mobile menu -->
+          <!-- mobile menu -->
+          <div class="mobile-menu js-menu-container">
+            <button
+              type="button"
+              class="button nav__button--close js-close-menu"
+            >
+              <svg width="40" height="40">
+                <use class="nav__close" href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list mob-menu-list">
+              <li class="mobile-menu__item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link mobile-menu__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="contacts-menu">
+                <li class="contacts-menu__item">
+                  <a href="tel:+380961111111" class="tell-list__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-menu__item">
+                  <a href="mailto:info@devstudio.com" class="mail-list__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="nav-social">
+                <li class="nav-social__item">
+                  <a href="" class="nav-social__link">Instagram</a>
+                </li>
+                <li class="nav-social__item">
+                  <a href="" class="nav-social__link">Twitter</a>
+                </li>
+                <li class="nav-social__item">
+                  <a href="" class="nav-social__link">Facebook</a>
+                </li>
+                <li class="nav-social__item">
+                  <a href="" class="nav-social__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- mobile menu -->
 
           <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
@@ -91,19 +124,29 @@
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="portfolio-btn">
             <li class="portfolio-btn__item">
-              <button type="button" class="button portfolio-btn__button">Усі</button>
+              <button type="button" class="button portfolio-btn__button">
+                Усі
+              </button>
             </li>
             <li class="portfolio-btn__item">
-              <button type="button" class="button portfolio-btn__button">Веб-сайти</button>
+              <button type="button" class="button portfolio-btn__button">
+                Веб-сайти
+              </button>
             </li>
             <li class="portfolio-btn__item">
-              <button type="button" class="button portfolio-btn__button">Додатки</button>
+              <button type="button" class="button portfolio-btn__button">
+                Додатки
+              </button>
             </li>
             <li class="portfolio-btn__item">
-              <button type="button" class="button portfolio-btn__button">Дизайн</button>
+              <button type="button" class="button portfolio-btn__button">
+                Дизайн
+              </button>
             </li>
             <li class="portfolio-btn__item">
-              <button type="button" class="button portfolio-btn__button">Маркетинг</button>
+              <button type="button" class="button portfolio-btn__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -111,22 +154,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk1-img1x.jpg  1x,
+                        ./img/port-desk1-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
 
-                <picture>
-                <source
-                  srcset="./img/port-mob1-img1x.jpg 1x, ./img/port-mob1-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob1-img1x.jpg"
-                  alt="ноутбук"
-                />
-              </picture>
+                    <source
+                      srcset="
+                        ./img/port-tab1-img1x.jpg  1x,
+                        ./img/port-tab1-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob1-img1x.jpg  1x,
+                        ./img/port-mob1-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob1-img1x.jpg" alt="ноутбук" />
+                  </picture>
 
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Технокряк</h2>
                   <p class="portfolio__name">Веб-сайт</p>
@@ -136,24 +198,47 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk2-img1x.jpg  1x,
+                        ./img/port-desk2-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab2-img1x.jpg  1x,
+                        ./img/port-tab2-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob2-img1x.jpg  1x,
+                        ./img/port-mob2-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/port-mob2-img1x.jpg"
+                      alt="чоловіки і м'яч"
+                    />
+                  </picture>
 
-              <picture>
-                <source
-                  srcset="./img/port-mob2-img1x.jpg 1x, ./img/port-mob2-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob2-img1x.jpg"
-                  alt="чоловіки і м'яч"
-                />
-              </picture>
-
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
-                  <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="portfolio__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="portfolio__name">Дизайн</p>
                 </div>
               </a>
@@ -161,21 +246,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk3-img1x.jpg  1x,
+                        ./img/port-desk3-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab3-img1x.jpg  1x,
+                        ./img/port-tab3-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob3-img1x.jpg  1x,
+                        ./img/port-mob3-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob3-img1x.jpg" alt="риба" />
+                  </picture>
 
-              <picture>
-                <source
-                  srcset="./img/port-mob3-img1x.jpg 1x, ./img/port-mob3-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob3-img1x.jpg"
-                  alt="риба"
-                />
-              </picture>
-
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Ресторан Seafood</h2>
@@ -186,21 +289,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                
-              <picture>
-                <source
-                  srcset="./img/port-mob4-img1x.jpg 1x, ./img/port-mob4-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob4-img1x.jpg"
-                  alt="наушники"
-                />
-              </picture>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk4-img1x.jpg  1x,
+                        ./img/port-desk4-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab4-img1x.jpg  1x,
+                        ./img/port-tab4-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob4-img1x.jpg  1x,
+                        ./img/port-mob4-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob4-img1x.jpg" alt="наушники" />
+                  </picture>
 
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Проєкт Prime</h2>
@@ -211,21 +332,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-      
-               <picture>
-                <source
-                  srcset="./img/port-mob5-img1x.jpg 1x, ./img/port-mob5-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob5-img1x.jpg"
-                  alt="дві коробки"
-                />
-              </picture>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk5-img1x.jpg  1x,
+                        ./img/port-desk5-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab5-img1x.jpg  1x,
+                        ./img/port-tab5-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob5-img1x.jpg  1x,
+                        ./img/port-mob5-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob5-img1x.jpg" alt="дві коробки" />
+                  </picture>
 
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Проєкт Boxes</h2>
@@ -236,21 +375,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                
-             <picture>
-                <source
-                  srcset="./img/port-mob6-img1x.jpg 1x, ./img/port-mob6-img@2x.jpgg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob6-img1x.jpg"
-                  alt="монітор"
-                />
-              </picture>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk6-img1x.jpg  1x,
+                        ./img/port-desk6-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab6-img1x.jpg  1x,
+                        ./img/port-tab6-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob6-img1x.jpg  1x,
+                        ./img/port-mob6-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob6-img1x.jpg" alt="монітор" />
+                  </picture>
 
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Inspiration has no Borders</h2>
@@ -261,23 +418,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-               
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk7-img1x.jpg  1x,
+                        ./img/port-desk7-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab7-img1x.jpg  1x,
+                        ./img/port-tab7-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob7-img1x.jpg  1x,
+                        ./img/port-mob7-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob7-img1x.jpg" alt="книга" />
+                  </picture>
 
-              <picture>
-                <source
-                  srcset="./img/port-mob7-img1x.jpg 1x, ./img/port-mob7-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob7-img1x.jpg"
-                  alt="книга"
-                />
-              </picture>
-
-
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Видання Limited Edition</h2>
@@ -288,23 +461,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk8-img1x.jpg  1x,
+                        ./img/port-desk8-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab8-img1x.jpg  1x,
+                        ./img/port-tab8-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob8-img1x.jpg  1x,
+                        ./img/port-mob8-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob8-img1x.jpg" alt="бірка" />
+                  </picture>
 
-              <picture>
-                <source
-                  srcset="./img/port-mob8-img1x.jpg 1x, ./img/port-mob8-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob8-img1x.jpg"
-                  alt="бірка"
-                />
-              </picture>
-
-
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Проєкт LAB</h2>
@@ -315,23 +504,39 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__card">
-                
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/port-desk9-img1x.jpg  1x,
+                        ./img/port-desk9-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-tab9-img1x.jpg  1x,
+                        ./img/port-tab9-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/port-mob9-img1x.jpg  1x,
+                        ./img/port-mob9-img@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./img/port-mob9-img1x.jpg" alt="ноутбук" />
+                  </picture>
 
-                <picture>
-                <source
-                  srcset="./img/port-mob9-img1x.jpg 1x, ./img/port-mob9-img@2x.jpg 2x"
-                  type="image/jpeg"
-                />
-                <img
-                  src="./img/port-mob9-img1x.jpg"
-                  alt="ноутбук"
-                />
-              </picture>
-
-
-                <p class="portfolio__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <p class="portfolio__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="portfolio__wrap">
                   <h2 class="portfolio__title">Growing Business</h2>
@@ -343,7 +548,7 @@
         </div>
       </section>
     </main>
-<footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__block">
           <div class="footer__wrapper">
@@ -437,4 +642,3 @@
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
-

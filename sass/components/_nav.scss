@@ -1,114 +1,64 @@
-// .nav {
-//   display: flex;
-//   align-items: center;
-
-//   &__logo {
-//     display: block;
-//     margin-right: 93px;
-//   }
-
-//   &__list {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
-// .nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
-// .nav__link {
-//   position: relative;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   color: var(--title-text-color);
-
-//   &--current::after {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 4px;
-//     background-color: var(--accent-color);
-//     border-radius: 2px;
-//   }
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
 @media screen and (max-width: 768px) {
-    .nav__list {
-        display: none;
-    }
-   
-    
+  .nav__list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .nav {
-  display: flex;
-  align-items: center;
-
-  &__logo {
-    margin-right: 88px;
-  }
-
-  &__list {
+  .nav {
     display: flex;
     align-items: center;
-  }
-}
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
+    &__logo {
+      margin-right: 88px;
+    }
 
-.nav__link {
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-
-  &--current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
+    &__list {
+      display: flex;
+      align-items: center;
+    }
   }
 
-  &:hover,
-  &:focus {
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .nav__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+
+    &--current::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .nav__link--current {
     color: var(--accent-color);
   }
 }
-    
- .nav__link--current {
-  color: var(--accent-color);
- }
-    
-}
 
 @media screen and (min-width: 1200px) {
- .nav__logo {
+  .nav__logo {
     margin-right: 92px;
   }
-
 }

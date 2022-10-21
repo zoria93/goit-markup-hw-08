@@ -25,20 +25,24 @@
             <a href="./index.html" class="logo nav__logo"
               ><span class="logo__text">Web</span>Studio</a
             >
-            <!-- mobile menu -->
-            <button type="button" class="button nav__button" data-menu-button>
+            <button type="button" class="button nav__button--open js-open-menu">
               <svg width="40" height="40">
-                <!-- <use class="nav__close" href="./img/icons.svg#icon-close"></use> -->
                 <use class="nav__open" href="./img/icons.svg#icon-menu"></use>
               </svg>
             </button>
           </div>
-          <div class="mobile-menu" data-menu>
-            <svg width="40" height="40">
+
+          <!-- mobile menu -->
+          <div class="mobile-menu js-menu-container">
+            <button
+              type="button"
+              class="button nav__button--close js-close-menu"
+            >
+              <svg width="40" height="40">
                 <use class="nav__close" href="./img/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <ul class="mobile-menu__list">
+            <ul class="mobile-menu__list mob-menu-list">
               <li class="mobile-menu__item">
                 <a
                   href="./index.html"
@@ -103,19 +107,16 @@
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com" class="contacts-list__link"
               ><svg class="contacts-list__icon" width="16" height="12">
-                <use href="./img/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
-            >
+                <use href="./img/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
           </li>
           <li class="contacts-list__item">
             <a href="tel:+380961111111" class="contacts-list__link">
               <svg class="contacts-list__icon" width="10" height="16">
-                <use href="./img/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
-            >
+                <use href="./img/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
-
     <main class="main">
       <!-- Hero section -->
       <section class="hero">
@@ -146,7 +147,6 @@
                 </p>
               </div>
             </li>
-
             <li class="features__item">
               <div class="gap">
                 <div class="features__wrapper">
@@ -161,7 +161,6 @@
                 </p>
               </div>
             </li>
-
             <li class="features__item">
               <div class="gap">
                 <div class="features__wrapper">
@@ -176,7 +175,6 @@
                 </p>
               </div>
             </li>
-
             <li class="features__item">
               <div class="gap">
                 <div class="features__wrapper">
@@ -203,31 +201,58 @@
           <ul class="ours-work">
             <li class="ours-work__item">
               <div class="ours-work__wrapper">
-                <img
-                  src="./img/boxhtml.jpg"
-                  alt="людина тримає руки на клавіатурі"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/work-desk1-img1x.jpg  1x,
+                      ./img/work-desk1-img@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/work-desk1-img1x.jpg"
+                    alt="людина тримає руки на клавіатурі"
+                  />
+                </picture>
                 <h3 class="ours-work__text">Десктопні додатки</h3>
               </div>
             </li>
             <li class="ours-work__item">
               <div class="ours-work__wrapper">
-                <img
-                  src="./img/box.jpg"
-                  alt="людина в одній руці тримає телефон, а друга рука на клавіатурі"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/work-desk2-img1x.jpg 1x,
+                      ./img/work-desk2img@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/work-desk2-img1x.jpg"
+                    alt="людина в одній руці тримає телефон, а друга рука на клавіатурі"
+                  />
+                </picture>
                 <h3 class="ours-work__text">Мобільні додатки</h3>
               </div>
             </li>
             <li class="ours-work__item">
               <div class="ours-work__wrapper">
-                <img
-                  src="./img/boxcss.jpg"
-                  alt="людина в руці тримає планшет"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/work-desk3-img1x.jpg  1x,
+                      ./img/work-desk3-img@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/work-desk3-img1x.jpg"
+                    alt="людина в руці тримає планшет"
+                  />
+                </picture>
                 <h3 class="ours-work__text">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -244,8 +269,25 @@
             <li class="team__item">
               <picture>
                 <source
+                  srcset="
+                    ./img/team-desk1-img1x.jpg  1x,
+                    ./img/team-desk1-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tem-tab1-img1x.jpg  1x,
+                    ./img/tem-tab1-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
                   srcset="./img/team1-img1x.jpg 1x, ./img/team1-img@2x.jpg 2x"
                   type="image/jpeg"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./img/team1-img1x.jpg"
@@ -292,8 +334,25 @@
             <li class="team__item">
               <picture>
                 <source
+                  srcset="
+                    ./img/team-desk2-img1x.jpg  1x,
+                    ./img/team-desk2-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tem-tab2-img1x.jpg  1x,
+                    ./img/tem-tab2-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
                   srcset="./img/team2-img1x.jpg 1x, ./img/team2-img@2x.jpg 2x"
                   type="image/jpeg"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./img/team2-img1x.jpg"
@@ -337,15 +396,29 @@
               </div>
             </li>
             <li class="team__item">
-             <picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-desk3-img1x.jpg  1x,
+                    ./img/team-desk3-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tem-tab3-img1x.jpg  1x,
+                    ./img/tem-tab3-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="./img/team3-img1x.jpg 1x, ./img/team3-img@2x.jpg 2x"
                   type="image/jpeg"
+                  media="(max-width: 767px)"
                 />
-                <img
-                  src="./img/team3-img1x.jpg"
-                  alt="чоловік посміхається"
-                />
+                <img src="./img/team3-img1x.jpg" alt="чоловік посміхається" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -384,10 +457,27 @@
               </div>
             </li>
             <li class="team__item">
-               <picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-desk4-img1x.jpg  1x,
+                    ./img/team-desk4-img@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tem-tab4-img1x.jpg 1x,
+                    ./img/tem-tab4-img@2.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="./img/team4-img1x.jpg 1x, ./img/team4-img@2x.jpg 2x"
                   type="image/jpeg"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./img/team4-img1x.jpg"
@@ -614,7 +704,6 @@
           <label class="form__label" for="phone">
             <span class="form__text">Телефон</span>
           </label>
-
           <div class="form__wrap">
             <input
               type="tel"
@@ -626,11 +715,9 @@
               <use href="./img/icons.svg#icon-phone1"></use>
             </svg>
           </div>
-
           <label class="form__label" for="mail">
             <span class="form__text">Пошта</span>
           </label>
-
           <div class="form__wrap">
             <input type="email" name="email" class="form__input" id="mail" />
             <svg class="form__icon" width="18" height="18">
@@ -646,7 +733,6 @@
               class="form__textarea"
             ></textarea>
           </label>
-
           <div class="checkbox">
             <label class="checkbox__label">
               <input type="checkbox" name="consent" class="checkbox__input" />

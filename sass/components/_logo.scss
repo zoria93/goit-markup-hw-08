@@ -1,29 +1,4 @@
-// .logo {
-//   font-family: "Raleway";
-//   text-decoration: none;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.2;
-//   letter-spacing: 0.03em;
-//   color: var(--primary-black-color);
-//   transition: color 250ms var(--cubic);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-
-//   &__text {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .logo--color {
-//   color: var(--first-bg-color);
-// }
-
-
- .logo {
+.logo {
   display: inline-block;
   font-family: "Raleway";
   text-decoration: none;
@@ -38,28 +13,24 @@
   &:focus {
     color: var(--accent-color);
   }
-
 }
 
 @media screen and (min-width: 1200px) {
-    .logo {
-      font-size: 26px;
-    }
-
+  .logo {
+    font-size: 26px;
   }
-
-  @media screen and (max-width: 768px) {
-    .nav__logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .nav__logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
-
 
 .logo__text {
-    color: var(--accent-color);
-  }
+  color: var(--accent-color);
+}
 
 .footer__logo {
   text-align: center;
@@ -68,23 +39,9 @@
 }
 
 
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .nav__logo {
-  padding-top: 26px;
-  padding-bottom: 26px;
-  
-}
-}
-
 @media screen and (min-width: 1200px) {
-   .nav__logo {
-  padding-top: 0;
-  padding-bottom: 0;
-  
+  .nav__logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
-
-}
-
